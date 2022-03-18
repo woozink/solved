@@ -12,25 +12,23 @@ public class SangsuRetry {
 
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
-        int reverseA =0;
-        int reverseB = 0;
-
-        while(a !=0){
-            int digit = a %10;
-            reverseA = reverseA *10 + digit;
-            a/= 10;
-        }
-
-        while(b !=0){
-            int digit = b %10;
-            reverseB = reverseB *10 + digit;
-            b/= 10;
-        }
+        int reverseA = reverseNumber(a);
+        int reverseB = reverseNumber(b);
 
         if(reverseA >reverseB){
             System.out.println(reverseA);
         }else{
             System.out.println(reverseB);
         }
+    }
+    
+    private static int reverseNumber(int originalNumber){
+        int reversedNumber = 0;
+        while(originalNumber !=0){
+            int digit = originalNumber %10;
+            originalNumber = originalNumber *10 + digit;
+            reversedNumber/= 10;
+        }
+        return reversedNumber;
     }
 }

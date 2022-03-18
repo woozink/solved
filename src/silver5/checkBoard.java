@@ -32,18 +32,20 @@ public class checkBoard {
             }
         }
 
-        int N_row = N - 7;
-        int M_col = M - 7;
+        int nRow = N - 7;
+        int mCol = M - 7;
 
-        for (int i = 0; i < N_row; i++) {
-            for (int j = 0; j < M_col; j++) {
+        for (int i = 0; i < nRow; i++) {
+            for (int j = 0; j < mCol; j++) {
                 find(i, j);
+
             }
         }
         System.out.println(min);
     }
 
 
+    // 보드에서 카운트를 늘려준다
     public static void find(int x, int y) {
         int count = 0;
         int end_y = y + 8;

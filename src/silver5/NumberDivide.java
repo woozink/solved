@@ -14,15 +14,13 @@ public class NumberDivide {
         int N = Integer.parseInt(br.readLine());
         StringBuilder sb = new StringBuilder();
 
-
-        for(int i =2; i <=Math.sqrt(N); i++) {
+        for (int i = 2; i <= Math.sqrt(N); i++) {
             while (N % i == 0) {
                 sb.append(i).append("\n");
-                N/=i;
+                N /= i;
             }
-
         }
-        if(N != 1){
+        if (N != 1) {
             sb.append(N);
         }
         System.out.println(sb);

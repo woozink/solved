@@ -28,7 +28,7 @@ public class DateCal21 {
             s++;
             m++;
             if (e == 16) {
-                e =1;
+                e = 1;
             }
             if(s == 29){
                 s =1;

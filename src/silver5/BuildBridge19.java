@@ -31,10 +31,12 @@ public class BuildBridge19 {
         if(dp[n][r] > 0){
             return dp[n][r];
         }
+
         if(n ==r || r ==0){
             return dp[n][r] = 1;
         }
-        return dp[n][r] = combi(n-1,r-1) +combi(n-1,r);
+
+        return dp[n][r] = combi(n-1,r-1) + combi(n-1,r);
 
     }
 }

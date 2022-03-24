@@ -20,7 +20,7 @@ public class Bracket05 {
     public static String solve(String s) {
         Stack<Character> stack = new Stack<>();
 
-        for (int i = 0; i < s.charAt(); i++) {
+        for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             //여는 괄호일 경우 스택에 넣는다.
 

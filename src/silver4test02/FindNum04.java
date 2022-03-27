@@ -29,7 +29,7 @@ public class FindNum04 {
         for(int i = 0; i< M; i++){
             int tmp = Integer.parseInt(st.nextToken());
         }
-        System.out.println(String.valueOf(binarySearch(tmp)));
+        //System.out.println(String.valueOf(binarySearch(tmp)));
     }
     static int binarySearch(int num){
         int start, mid, end;

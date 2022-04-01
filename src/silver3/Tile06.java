@@ -9,20 +9,19 @@ public class Tile06 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int N = Integer.parseInt(br.readLine());
-        int[] dp = new int[N + 2];
+        int[] dp = new int[N + 1];
 
         dp[0] = 1;
         dp[1] = 1;
         dp[2] = 2;
         recur (dp,N);
 
-        System.out.println(recur(dp, N));
+        System.out.println(dp[N]);
     }
 
-    public static int recur(int dp[], int N) {
-        for (int i = 3; i < N; i++) {
+    public static void recur(int dp[], int N) {
+        for (int i = 3; i <= N; i++) {
             dp[i] = (dp[i - 1] + dp[i - 2]) % 10007;
         }
-        return dp[N];
     }
 }

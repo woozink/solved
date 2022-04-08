@@ -33,7 +33,7 @@ public class NandM17 {
         }
         for(int i = 1; i <= N; i++){
             arr[depth] = i;
-            dfs(depth +1);
+            dfs(depth+1);
 
         }
     }

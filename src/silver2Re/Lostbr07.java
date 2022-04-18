@@ -15,7 +15,7 @@ public class Lostbr07 {
         while(st.hasMoreTokens()){
             int temp = 0;
 
-            //빼샘으로 나뉜 토큰을 덧셈으로 분리하여 해당 토큰들을 더한다.
+            // 뺄샘으로 나뉜 토큰을 덧셈으로 분리하여 해당 토큰들을 더한다.
             StringTokenizer addition = new StringTokenizer(st.nextToken(),"+");
 
             //덧샘으로 나뉜 토큰들을 모두 더한다.

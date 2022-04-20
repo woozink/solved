@@ -34,7 +34,7 @@ public class StartLink09 {
     //팀뽑기 메소드
     static void choiceTeam(int start, int count){
         if(count == size/2){
-            diiSum();
+            diffSum();
             return;
         }
 

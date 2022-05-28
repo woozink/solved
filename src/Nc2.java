@@ -18,21 +18,18 @@
 //
 //    public static int solution(String[] birth) {
 //        int ans = 0;
-//        String[] arr = new String[3];
-//        String[] arr1 = new String[3];
-//        String[] arr2 = new String[3];
 //
 //
 //        for (int i = 0; i < birth.length; i++) {
-//            arr[i] = birth[i].substring(0, 3);
-//            arr1[i] = birth[i].substring(4, 6);
-//            arr2[i] = birth[i].substring(6, 8);
-//            int a = Integer.valueOf(arr[i]);
-//            int b = Integer.valueOf(arr1[i]);
-//            int c = Integer.valueOf(arr2[i]);
+//            String yearStr = birth[i].substring(0, 3);
+//            String monthStr = birth[i].substring(4, 6);
+//            String dayStr = birth[i].substring(6, 8);
+//            int year = Integer.valueOf(arr[i]);
+//            int month = Integer.valueOf(arr1[i]);
+//            int day = Integer.valueOf(arr2[i]);
 //
 //            if (arr[i].length() != 4) {
-//                break;
+//                continue;
 //            } else if (a < 1900 && a > 2021) {
 //                break;
 //            } else if(arr1[i].length() !=2){

@@ -7,12 +7,16 @@ public class Solution {public static void main(String[] args) throws IOException
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     StringTokenizer str = new StringTokenizer(br.readLine());
     StringBuilder sb = new StringBuilder();
+
+
     int T = Integer.parseInt(str.nextToken());
     for (int tc = 1; tc <= T; tc++) {
         str = new StringTokenizer(br.readLine());
         int N = Integer.parseInt(str.nextToken());
         String[] valArr = new String[N];
         int[] numArr = new int[N];
+
+
         for(int i=0; i<N; i++){
             str = new StringTokenizer(br.readLine());
             valArr[i] = str.nextToken();
